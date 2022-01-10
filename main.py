@@ -17,17 +17,17 @@ def redirect_index():
 
 @app.route("/")
 def index():
-    return render_template("index.html", title="Index")
+    return render_template("index.html")
 
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title="About")
+    return render_template("about.html")
 
 
 @app.route("/lon")
 def lon():
-    return render_template("lon.html", title="League of Nations")
+    return render_template("lon.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
